@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/register.css/">
+  </head>
+  <body>
+
+    <form id="signup-form" onsubmit="return validateForm()" action="register.php" method="post">
+      <section class="h-100 bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-10"></div>
+            
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card card-registration my-4">
+                <div class="row g-0">
+                  <div class="col-xl-6 d-none d-xl-block">
+                    <img src="assets\register.jpg"
+                      alt="Sample photo" class="img-fluid"
+                      style="box-sizing: border-box;width: 100%;height: 100%;" />
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-5 text-uppercase">Registration</h3>
+      
+                      <label for="username">Username:</label>
+                      <div class="form-group">
+                        <input type="text" id="username" name="username" required>
+                      </div>  
+                        
+                     
+                      <label for="email">Email:</label>
+                      <div class="form-group">
+                         <input type="email" id="email" name="email" required>
+                      </div>
+                      
+                      
+                      <label for="password">Password:</label>
+                      <div class="form-group">
+                         <input type="password" id="password" name="password" minlength="8" required>
+                      </div>
+                      
+                      <label for="confirm_password">Confirm Password:</label>
+         <div class="form-group">
+          <input type="password" id="confirm_password" name="confirm_password" required>
+         </div>
+         <button type="submit" class="btn btn-primary btn-block">Submit</button>
+         <p> Already have an account!! <a href="login.html">Login</a></p>
+        </div>
+      </div>
+      </div>
+      
+                      
+    </form>
+    <script src="/js/register.js"></script>
+                      
+                    </div>
+                    <div class="col-md-3 col-sm-10"></div>
+                  </div>
+                </div>
+                  </div>
+                  </div>
+                </div>
+              
+        
+      </section>  
+  </body>
+</html>
